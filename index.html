@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harry Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('data:image/jpeg;base64,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');
+        background-size: cover;
+    }
+    
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+    
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+    
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+    
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    
+    .navbar {
+        display: inline-block;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+    
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+    
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+    
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    
+    .container h1 {
+        text-align: center;
+    }
+    
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="Logo Image">
+            <div>Subho Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn"><a href="#">Call Us Now</a> </button>
+            <button class="btn"><a href="#">Email Us</a> </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Airport, Kolkata now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
